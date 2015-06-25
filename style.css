@@ -1,0 +1,97 @@
+h1{
+	font-size: 48px
+	position: fixed;
+	text-align: center;
+}
+.column-select{
+	float: left;
+}
+/*#button1, #button2, #button3, #button4, #button5, #button6, #button7{
+	width: 59px;
+	height: 59px;
+	border-radius: 50px;
+	background-color:black;
+	font-family: "helvetica", sans-serif;
+	color: white;
+	font-size: 10px;
+}
+*/
+
+
+.showRedButton{
+	width: 59px;
+	height: 59px;
+	border-radius: 50px;
+	background-color:red;
+	font-family: "helvetica", sans-serif;
+	color: white;
+	font-size: 10px;
+}
+.showBlackButton{
+	width: 59px;
+	height: 59px;
+	border-radius: 50px;
+	background-color:black;
+	font-family: "helvetica", sans-serif;
+	color: white;
+	font-size: 10px;
+}
+
+
+#grid{
+	width: 100%;
+	display: inline-block;
+}
+
+#column-1, #column-2, #column-3, #column-4, #column-5, #column-6, #column-7 {
+	float: left;
+}
+
+#column-1 div{
+	height: 60px;
+	display: block;
+	width: 60px;
+	border: 1px solid black;
+}
+#column-2 div {
+	height: 60px;
+	display: block;
+	width: 60px;
+	border: 1px solid black;
+}
+#column-3 div{
+	height: 60px;
+	display: block;
+	width: 60px;
+	border: 1px solid black;
+}
+#column-4 div{
+	height: 60px;
+	display: block;
+	width: 60px;
+	border: 1px solid black;
+}
+#column-5 div{
+	height: 60px;
+	display: block;
+	width: 60px;
+	border: 1px solid black;
+}
+#column-6 div{
+	height: 60px;
+	display: block;
+	width: 60px;
+	border: 1px solid black;
+}
+#column-7 div{
+	height: 60px;
+	display: block;
+	width: 60px;
+	border: 1px solid black;
+}
+
+
+
+
+
+
