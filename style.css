@@ -3,41 +3,77 @@ h1{
 	position: fixed;
 	text-align: center;
 }
+
+
+
+
+
+/*button styling*/
 .column-select{
 	float: left;
 }
-/*#button1, #button2, #button3, #button4, #button5, #button6, #button7{
+#button1, #button2, #button3, #button4, #button5, #button6, #button7{
+	width: 59px;
+	height: 59px;
+	border-radius: 50px;
+	font-family: "helvetica", sans-serif;
+	color: black;
+	font-size: 10px;
+	font-weight: bold;
+	border-top:		2px solid black;
+	border-left:		2px solid black;
+	border-right:		2px solid black;
+	border-bottom:		2px solid black;
+	background-color:	transparent;
+}
+
+
+#showBlackButton{
+	width: 59px;
+	height: 59px;
+	border-radius: 50px;
+	font-family: "helvetica", sans-serif;
+	color: white;
+	font-size: 10px;
+	font-weight: bold;
+	border-top:		2px solid black;
+	border-left:		2px solid black;
+	border-right:		2px solid black;
+	border-bottom:		2px solid black;
+	background-color:	black;
+}
+#showRedButton{
+	width: 59px;
+	height: 59px;
+	border-radius: 50px;
+	font-family: "helvetica", sans-serif;
+	color: black;
+	font-size: 10px;
+	font-weight: bold;
+	border-top:		2px solid black;
+	border-left:		2px solid black;
+	border-right:		2px solid black;
+	border-bottom:		2px solid black;
+	background-color:	red;
+}
+
+.blackToken{
 	width: 59px;
 	height: 59px;
 	border-radius: 50px;
 	background-color:black;
-	font-family: "helvetica", sans-serif;
-	color: white;
-	font-size: 10px;
 }
-*/
-
-
-.showRedButton{
+.redToken{
 	width: 59px;
 	height: 59px;
 	border-radius: 50px;
 	background-color:red;
-	font-family: "helvetica", sans-serif;
-	color: white;
-	font-size: 10px;
-}
-.showBlackButton{
-	width: 59px;
-	height: 59px;
-	border-radius: 50px;
-	background-color:black;
-	font-family: "helvetica", sans-serif;
-	color: white;
-	font-size: 10px;
 }
 
 
+
+
+/*Game board styling*/
 #grid{
 	width: 100%;
 	display: inline-block;
