@@ -51,7 +51,8 @@ var Game = {
 	f6: $("#f6"),
 	f7: $("#f7"),
 
-	boardGame: [[a1,b1,c1,d1,e1,f1],
+	boardGame: [
+				[a1,b1,c1,d1,e1,f1],
 				[a2,b2,c2,d2,e2,f2],
 				[a3,b3,c3,d3,e3,f3],
 				[a4,b4,c4,d4,e4,f4],
@@ -60,50 +61,42 @@ var Game = {
 				[a7,b7,c7,d7,e7,f7]
 				],
 	turn: 0,
-	// dropToken: function(){
-	// 	if(this.turn === 0){ 
-	// 		var blackTokenDiv = $("<div>")
-	// 		blackTokenDiv.attr("class","blackToken");
-	// 		blackTokenDiv.appendTo(this.a1);
-	// 			this.turn === 1;
-	// 	}else if(this.turn === 1 ){
-	// 		var redTokenDiv = $("<div>")
-	// 		redTokenDiv.attr("class","redToken");
-	// 		var aTwo = ($("#a2"));
-	// 		redTokenDiv.appendTo(aTwo)
-	// 	    	this.turn === 0; 
-	// 	} 
-	// },
+
 	dropToLowest: function(){
-		if(this.turn === 0){ 
-			var blackTokenDiv = $("<div>")
+		if(Game.turn === 0){ 
+			var blackTokenDiv = $("<div>");
 			blackTokenDiv.attr("class","blackToken");
 				for (var i = 5; i >= 0; i--){
-						var posInBoard = Game.boardGame[0][i].getAttribute("id");
-						if( (this[posInBoard].attr("class")==="blackToken") || (this[posInBoard].attr("class")==="redToken") ){
-							blackTokenDiv.appendTo
-						}else if(this[posInBoard].attr("class")===undefined){
-							blackTokenDiv.appendTo(posInBoard);
-						}
-				}
-		}else if(this.turn === 1 ){
-			var redTokenDiv = $("<div>")
+					var posInBoardLoop1 = Game.boardGame[0][i].getAttribute("id");
+					var blackTokenClass1 = Game[posInBoardLoop1].children(".blackToken").length
+					var redTokenClass1 = Game[posInBoardLoop1].children(".redToken").length
+						if( (blackTokenClass1===0) && (redTokenClass1===0) ){
+							blackTokenDiv.appendTo(Game.boardGame[0][i]);
+							break;
+						};
+				};
+			Game.turn = 1;
+		}else if(Game.turn === 1){
+			var redTokenDiv = $("<div>");
 			redTokenDiv.attr("class","redToken");
-				for (var i = 5; i <= 5; i--){
-					if(boardGame[i][0].hasClass("blackToken")){
+				for(var i = 5; i >= 0; i--){
+					var posInBoardLoop2 = Game.boardGame[0][i].getAttribute("id");
+					var blackTokenClass2 = Game[posInBoardLoop2].children(".blackToken").length
+					var redTokenClass2 = Game[posInBoardLoop2].children(".redToken").length
+					if( (blackTokenClass2===0) && (redTokenClass2===0) ){
+						redTokenDiv.appendTo(Game.boardGame[0][i]);
+						break;
+					};
+				};
+			Game.turn = 0;
+		};
 
 
-					}else if(boardGame[i][0].hasClass("redToken")){
-
-					}
-				}
-		}
 	},
 
 
 
 };
-
 
 
 
@@ -133,7 +126,7 @@ var Game = {
 
 // 	}
 // } 
-// $('button1').on("click",buttonAppear);
+
 // $('button2').on("click",buttonAppear);
 // $('button3').on("click",buttonAppear);
 // $('button4').on("click",buttonAppear);
