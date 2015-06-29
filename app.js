@@ -357,13 +357,9 @@ var Game = {
 				}
 		};
 	},
-	// changeTurnText: function(){
-	// 	if(Game.turn===0){
-	// 		$("#turns").text("Black Turn");
-	// 	}else if(Game.turn===1){
-	// 		$("#turns").text("Red Turn");
-	// 	}
-	// },
+	restartGame: function(){
+		location.reload();
+	}
 
 };
 Game.getAWin();
@@ -383,4 +379,5 @@ $('#button5').on("click",Game.getAWin);
 $('#button6').on("click",Game.getAWin);
 $('#button7').on("click",Game.getAWin);
 
+$('#restart').on("click",Game.restartGame);
 

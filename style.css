@@ -55,8 +55,28 @@ body {
 	background-color: #FF0000;
 }
 
-#turns{
-	color:black;
+#restart{
+	position:relative;
+	top:20px;
+	left: 310px;
+	width: 80px;
+	height: 30px;
+	border-radius: 10px;
+	font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+	color: black;
+	font-size: 14px;
+	font-weight: bold;
+	border-top:			2px solid white;
+	border-left:		2px solid white;
+	border-right:		2px solid white;
+	border-bottom:		2px solid white;
+	background-color:	transparent;
+    -webkit-box-shadow: 
+        0px 0px  3px 0px  black, 
+        0px 0px  4px 0px  black,
+        0px 0px  5px 0px  black,
+
+        0px 10px 3px -1px rgba(128,128,128,1);
 }
 
 
